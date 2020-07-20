@@ -1,0 +1,8 @@
+[
+    {"origin": "San Pedro,Laguna Ph", "destination": "Singapore, Sangge Port", "time":"1 week", "ship":"Full Container (FCL)","cut":"20 April"},
+    {"origin": "San Pedro,Laguna Ph", "destination": "Singapore, Sangge Port", "time":"2 week(s)", "ship":"Loose Cargo (LCL)","cut":"21 April"},
+    {"origin": "San Pedro,Laguna Ph", "destination": "Singapore, Sangge Port", "time":"3 week(s)", "ship":"Full Container (FCL)","cut":"22 April"},
+    {"origin": "San Pedro,Laguna Ph", "destination": "Singapore, Sangge Port", "time":"4 week(s)", "ship":"Loose Cargo (FCL)","cut":"23 April"},
+    {"origin": "Sucat, Muntinlupa Ph", "destination": "Singapore, Sangge Port", "time":"5 week(s)", "ship":"Full Container (FCL)","cut":"24 April"},
+    {"origin": "Alabang, Muntinlupa Ph", "destination": "San Pedro, Yasha Port", "time":"6 week(s)","ship":"Loose Cargo (FCL)","cut":"25 April"}
+]

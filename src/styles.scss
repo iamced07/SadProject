@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/bootstrap-4.3.1/scss/bootstrap.scss';
+@import './assets/fontawesome-free-5.9.0-web/css/all.css';
+
+body, html{
+    font-family: Helvetica;
+    color: black;
+    margin: 0;
+    border:0;
+    outline: none;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 20px;
+    }
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+/*input::placeholder {
+    font-family: "Font Awesome 5 Free", Helvetica;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 2;
+    font-weight: 600;
+}*/

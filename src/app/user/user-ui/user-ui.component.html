@@ -1,0 +1,90 @@
+<div class="container-fluid">
+  <div class="upper">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2 puplogo">
+        <div class="pup">
+          <img src="../../../assets/logo/pup.png" alt="pup logo">
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 heading">
+        <div class="header">
+          <b>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES <br>
+          COLLEGE OF ENGINEERING<br>
+          COMPUTER ENGINEERING DEPARTMENT</b>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 cpelogo">
+        <div class="cpe">
+          <img src="../../../assets/logo/cpe.png" alt="cpe logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line"></div>
+  <div class="search">
+    <div class="inputbox">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <!-- <input type="text" [disabled]="KeywordIsDisabled" (click)="KeywordClick()" placeholder="&#xf031; &nbsp; Keyword"  #box (keyup)="onEnter(box.value)" (keyup.enter)="clicked" > -->
+            <select class="option"id="searchItem" name="searchItem"
+            [(ngModel)]="searchItem" (ngModelChange)='onSearchItemSelected($event)'>
+              <option *ngFor="let search of searchItems" [ngValue]="search">
+                {{search.name}}
+              </option>
+            </select>
+          </div>
+        <div class="col-sm-12 col-md-7 col-lg-7">
+          <input type="text" placeholder="&#xf406; &nbsp; Search terms.." #box2 (keyup)="onEnter(box2.value)" (keyup.enter)="clicked" [value]="message">
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2">
+            <button class="button2" (click)="searched()">
+              <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+      </div>
+    </div>
+      <br>
+  </div>
+
+<div class="content-table" >
+  <table class="tab" id="myTable" *ngFor="let part of filterResult">
+        <tr>{{part.Title}}<br></tr>
+        <tr> {{part.Author}} </tr>
+        <tr>{{part.Abstract}}</tr>
+  </table>
+</div>
+
+<pre>
+
+
+
+
+
+
+
+</pre>
+
+  <div class="back">
+    <div class="row">
+      <div class="col-lg-6">
+        <button class="button" a routerLink="/">
+          <i class="fas fa-chevron-left"></i> &nbsp; Back
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <hr>
+    © 2019 Arctic Fox | All Rights Reserved
+  </footer>
+
+
+</div>
+
+<!--
+<button a routerLink="/">
+  <i class="fas fa-chevron-left"></i>Back
+</button>
+-->

@@ -1,0 +1,79 @@
+<div class="container-fluid">
+  <div class="login-sm">
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="upper">
+                  <img src="../../assets/logo/cpe.png" alt="cpe logo"> <br>
+                  <b>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES <br>
+                  COLLEGE OF ENGINEERING<br>
+                  COMPUTER ENGINEERING DEPARTMENT</b>
+              </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+              <form action="">
+                  <b>ONLINE WEB-BASED COMPENDIUM</b><br>
+                  <hr>
+                  <input type="text" placeholder="&#xf406; &nbsp; Username"> <br>
+                  <input type="password" placeholder="&#xf023; &nbsp; Password"> <br>
+                  <div class="remember">
+                      <input type="checkbox"> Remember me
+                  </div>
+                  <hr>
+                  <a href=""> Forgot Password?</a>
+                  <br>
+                  <button class="button">
+                      Login
+                  </button>
+              </form>
+          </div>
+      </div>
+      <app-footer></app-footer>
+  </div>
+
+  <div class="login">
+      <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6">
+              <div class="left">
+                  <img src="../../assets/logo/cpe.png" alt="">
+                  <br>
+                  <h6>
+                      <b>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES <br>
+                      COLLEGE OF ENGINEERING<br>
+                      COMPUTER ENGINEERING DEPARTMENT</b>
+                      <div class="label-sm">small</div>
+                      <div class="label-md">medium</div>
+                      <div class="label-lg">large</div>
+                  </h6>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-7 col-lg-6">
+              <div class="right">
+                  <div class="card">
+                      <b>ONLINE WEB-BASED COMPENDIUM</b><br>
+                      <hr>
+                    <form (submit)="loginUser($event)">
+                            <input type="email" id="email" placeholder="Email"> <br>
+                            <input type="password" id="password" placeholder="Password">
+                        <div class="col-sm-6 col-md-6 col-lg-6"><input type="checkbox"> Remember me </div>
+                        <!-- <div class="col-sm-6 col-md-6 col-lg-6"><a href="javascript:void(0)">Forgot Password?</a></div>
+    -->
+                        <hr>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                        <span >
+                        <button type="button" class="btn btn-primary" a routerLink="/add">Login</button>
+                        </span>         
+                        </div>
+                        <!-- <div class="form-group" >
+                        <button type="button" class="btn" >Cancel</button>
+                        <button type="button" class="btn btn-primary"
+                                >Get email to reset passowrd</button>
+                        </div> -->
+                    </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <app-footer></app-footer>
+  </div>
+</div>

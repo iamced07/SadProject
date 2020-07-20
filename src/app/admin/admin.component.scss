@@ -1,0 +1,249 @@
+.login-sm{
+    // text-align: center;
+
+    [class*="col-"]{
+        // text-align: center;
+        padding: 0px;
+        margin:0px;
+        
+        .upper{
+            background: linear-gradient( 180deg, #FD991C 10%, #FCCF31 100%);
+            border-bottom-left-radius: 70px;
+            padding: 20px;
+
+            img{
+                width: 130px;
+                height: 130px;
+            }
+
+            b{
+                font-size: .7em;
+            }
+        }
+
+        form{
+        display: block;
+        text-align: center;
+        margin: auto;
+        border: none;
+        border-radius: 20px;
+        background: white;
+        padding: 20px;
+        width: 100%;
+
+            a, b{
+                font-size: .8em;
+            }
+
+            .remember{
+                width: auto;
+                font-size: .8em;
+
+                input[type=checkbox]{
+                    width: 13px;
+                    margin: 0;
+                }
+
+            }
+
+            input{
+                width: 80%;
+                margin: 10px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                padding: 8px;
+                outline: none;
+            }
+
+            input::placeholder {
+                font-family: "Font Awesome 5 Free", Helvetica;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 2;
+                font-weight: 600;
+                font-size: .7em;
+            }
+
+            .button{
+                background-color: #FD991C; //#FD991C
+                cursor: pointer;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: .8em;
+                border-radius: 25px;
+                width: 60%;
+            }
+
+            .button:hover {
+                background-color: #FFB71C;
+            }
+
+            .button:active {
+            background-color: #FD991C;
+            transform: translateY(4px);
+            }
+        }
+    }
+}
+
+
+.login{
+    text-align: center;
+    padding: 15px;
+
+    .row{
+        text-align: center;
+        background: linear-gradient( 180deg, #FD991C 10%, #FCCF31 100%);
+        //background: linear-gradient(to right,#FD991C 0, #FCCF31 100%);
+        border: none;
+        border-radius: 30px;
+    
+        [class*="col-"]{
+        text-align: center;
+        padding: 0px;
+        margin:0px;
+            .btn{
+                margin:auto;
+                width:80%;
+            }
+           
+            .left{
+                text-align: center;
+                padding: 100px 50px 100px 50px; // t l b r
+                img{
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+
+            .right{
+            height: 100%;
+            padding-top: 140px;
+            padding-bottom: 30px;
+            background: #0009;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+
+                form{
+                display: block;
+                text-align: center;
+                margin: auto;
+                border: none;
+                border-radius: 20px;
+                background: white;
+                padding: 20px;
+                @media screen and (min-width: 768px){width: 60%;}
+                @media screen and (min-width: 992px){width: 60%;}
+
+                    input{
+                        width: 80%;
+                        margin: 10px;
+                        border: 1px solid gray;
+                        border-radius: 15px;
+                        padding: 10px;
+                        outline: none;
+                    }
+
+                    input::placeholder {
+                        font-family: "Font Awesome 5 Free", Helvetica;
+                        -moz-osx-font-smoothing: grayscale;
+                        -webkit-font-smoothing: antialiased;
+                        display: inline-block;
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        line-height: 2;
+                        font-weight: 600;
+                        font-size: .9em;
+                    }
+
+                    .button{
+                        background-color: #FD991C;
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        padding: 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        border-radius: 50px;
+                        width: 60%;
+                    }
+
+                    .button:hover {
+                        background-color: #FFB71C;
+                    }
+
+                    .button:active {
+                    background-color: #FD991C;
+                    transform: translateY(4px);
+                    }
+
+                    input[type=checkbox]{
+                        width: 13px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .label-md, .label-lg, .login{
+        display: none;
+    }
+    .label-sm{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px){
+    .label-sm, .label-lg, .login-sm{
+        display: none;
+    }
+    .label-md{
+        display: block;
+    }
+}
+@media screen and (min-width: 992px){
+    .label-sm, .label-md .login-sm{
+        display: none;
+    }
+    .label-lg{
+        display: block;
+    }
+}
+.card {
+  display: block;
+  text-align: center;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  input{
+    width: 80%;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+  }
+  input[type=checkbox]{
+    width: 13px;
+    margin: 0;
+  }
+}

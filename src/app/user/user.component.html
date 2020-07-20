@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="upper">
+    <img src="../../assets/logo/cpe.png" alt="cpe logo"> <br>
+    <b>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES <br>
+    COLLEGE OF ENGINEERING<br>
+    COMPUTER ENGINEERING DEPARTMENT</b>
+  </div>
+  
+  <div class="line"></div>
+
+  <div class="lower">
+    <div class="about">
+      <b> ONLINE WEB-BASED COMPENDIUM SYSTEM </b>
+      <p>
+        
+
+
+        Online Web-Based Compendium System is a collection of thesis in both bachelor and masters degree under the Computer Engineering Department of Polytechnic University of the Philippines from year 2000 to 2019. 
+        This system aims to provide conveniency to students in which they can access this system if their thesis is already available or not.
+        Students can also use these for references on their ongoing thesis including data collection, formats, etc. 
+
+        This system enables the user to enter a name of an author, co-authors and title. 
+        Upon entering the details needed the system will then display the Title, Author, Co-Author, Date Published and the Abstract of the study.
+
+        
+      
+        
+        
+
+
+      </p>
+    </div>
+    <div class="started" *ngIf="myStart"> 
+      <button class="button" (click)="Search()"> Get Started </button>
+    </div>
+    <div class="search" *ngIf="mySearch">
+      <div class="inputbox">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <select class="option" name="searchItem"
+              [(ngModel)]="searchItem" (ngModelChange)='onSearchItemSelected($event)'>
+                <option *ngFor="let search of searchItems" [ngValue]="search">
+                  {{search.name}}
+                </option>
+              </select>
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <input type="text" placeholder="&#xf406; &nbsp; Search terms.." #box2 (keyup)="onEnter(box2.value)" (keyup.enter)="clicked" >
+          </div>
+          <div class="col-sm-12 col-md-2 col-lg-2">
+              <button class="button2" a routerLink="/result" (click)="newMessage()">
+                <i class="fas fa-search"></i> Search
+              </button>
+          </div>
+        </div>
+      </div>
+        <br>
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-2 space"> </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 undergrad">
+          <input type="radio" name="level" value="Undergrad" checked> Undergrad
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 masters">
+          <input type="radio" name="level" value="Masters"> Masters
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-2 space"> </div>
+        <br>
+      </div>
+    </div>
+    
+  </div>
+  <app-footer></app-footer>
+
+
+</div>
