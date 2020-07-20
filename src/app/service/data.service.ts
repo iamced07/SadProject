@@ -14,13 +14,14 @@ export class DataService implements OnInit {
   private filteredSearchMessageSource = new BehaviorSubject<any>('');
   currentMessage = this.messageSource.asObservable();
   currentSearchItem = this.searchItemSource.asObservable();
-  // pwedeng url ng db yung ipalit sa url
-  private url = 'http://localhost:1234/api/sample.php';
 
+  private url = '/api/sample.php';
+
+  constructor( private http: HttpClient ) { }
+  
   getMessage(): Observable<ISample[]> {
     return this.http.get<ISample[]>(this.url);
   }
-  constructor( private http: HttpClient ) { }
   changeMessage( message: string) {
     this.messageSource.next(message);
   }
